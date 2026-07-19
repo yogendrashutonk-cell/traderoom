@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3826208950854017');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3826208950854017&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade ROOM</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#020617;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:8px;
+    overflow-x:hidden;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+    background:#040b1f;
+    border-radius:28px;
+    padding:14px;
+    position:relative;
+    overflow:hidden;
+    border:2px solid rgba(255,255,255,0.08);
+    box-shadow:
+    0 0 20px #008cff,
+    0 0 35px rgba(255,166,0,0.35);
+}
+
+.container::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:28px;
+    padding:2px;
+    background:linear-gradient(135deg,#00aaff,#ffaa00);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+    pointer-events:none;
+}
+
+/* LOGO */
+
+.logo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin:auto;
+    background:#000;
+    border:3px solid #f7b500;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    box-shadow:0 0 15px #f7b500;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* TITLE */
+
+.title{
+    text-align:center;
+    font-size:40px;
+    font-weight:900;
+    color:#ffbf00;
+    margin-top:12px;
+    line-height:1;
+}
+
+/* VERIFY */
+
+.verify{
+    text-align:center;
+    color:#fff;
+    font-size:17px;
+    margin-top:6px;
+    margin-bottom:14px;
+}
+
+/* BOX */
+
+.box{
+    width:100%;
+    background:#06112d;
+    border:2px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:13px;
+    margin-bottom:11px;
+    display:flex;
+    align-items:center;
+    gap:13px;
+    color:#fff;
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+}
+
+.icon{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    flex-shrink:0;
+}
+
+.blue{
+    background:#0d5eff;
+}
+
+.green{
+    background:#09c44f;
+}
+
+.text{
+    font-size:18px;
+    font-weight:700;
+}
+
+/* AUTO */
+
+.auto-text{
+    line-height:1.1;
+}
+
+.auto-text span{
+    color:#0d5eff;
+    font-size:42px;
+    font-weight:900;
+}
+
+.small{
+    font-size:14px;
+    font-weight:500;
+}
+
+/* BUTTON */
+
+.join-btn{
+    width:100%;
+    height:65px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(180deg,#00b7ff,#1147ff);
+    color:#fff;
+    font-size:24px;
+    font-weight:900;
+    cursor:pointer;
+    box-shadow:0 0 20px #0d5eff;
+    transition:.3s;
+    margin-bottom:12px;
+}
+
+.join-btn:hover{
+    transform:scale(1.02);
+}
+
+/* FEATURES */
+
+.features{
+    background:#06112d;
+    border-radius:18px;
+    padding:13px;
+    border:2px solid rgba(255,255,255,0.08);
+    margin-bottom:11px;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    padding:7px 0;
+    border-bottom:1px dashed rgba(255,255,255,0.15);
+}
+
+.feature:last-child{
+    border-bottom:none;
+}
+
+.tick{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#0ecb4f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:17px;
+}
+
+/* WARNING */
+
+.warning{
+    background:#06112d;
+    border-radius:18px;
+    padding:12px;
+    border:2px solid rgba(255,255,255,0.08);
+    color:#fff;
+    font-size:14px;
+    line-height:1.4;
+    margin-bottom:11px;
+}
+
+.warning span{
+    color:#ffcc00;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#06112d;
+    border-radius:18px;
+    padding:13px;
+    border:2px solid rgba(255,255,255,0.08);
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+}
+
+.footer a{
+    color:#0d5eff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:900;
+}
+
+@media(max-width:480px){
+
+.title{
+    font-size:34px;
+}
+
+.text{
+    font-size:16px;
+}
+
+.join-btn{
+    font-size:22px;
+    height:60px;
+}
+
+.auto-text span{
+    font-size:38px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="https://i.imgur.com/HDBGA2M.jpeg" alt="logo">
+    </div>
+
+    <!-- TITLE -->
+    <div class="title">
+        THE TRADE R♾️M
+    </div>
+
+    <!-- VERIFY -->
+    <div class="verify">
+        ✅ Trusted by thousands of learners
+    </div>
+
+    <!-- BOX 1 -->
+    <div class="box">
+
+        <div class="icon blue">
+            ⏰
+        </div>
+
+        <div class="text">
+            24/7 Market Updates
+        </div>
+
+    </div>
+
+    <!-- BOX 2 -->
+    <div class="box">
+
+        <div class="icon green">
+            🎁
+        </div>
+
+        <div class="text">
+            Free Telegram Access
+        </div>
+
+    </div>
+
+    <!-- AUTO JOIN -->
+    <div class="box">
+
+        <div class="icon blue">
+            🚀
+        </div>
+
+        <div class="auto-text">
+
+            <div style="font-size:18px;font-weight:700;">
+                Auto joining in
+            </div>
+
+            <div>
+                <span id="count">7</span>
+
+                <span style="font-size:18px;color:#fff;">
+                    seconds...
+                </span>
+            </div>
+
+            <div class="small">
+                If not opened, click below 👇
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JOIN BUTTON -->
+    <button class="join-btn" onclick="joinTelegram()">
+
+        ✈ Join Telegram
+
+    </button>
+
+    <!-- FEATURES -->
+    <div class="features">
+
+        <div class="feature">
+
+            <div class="tick">
+                ✔
+            </div>
+
+            Market Insights & Discussions
+
+        </div>
+
+        <div class="feature">
+
+            <div class="tick">
+                ✔
+            </div>
+
+            Learn With Experts
+
+        </div>
+
+        <div class="feature">
+
+            <div class="tick">
+                ✔
+            </div>
+
+            Practical Strategies & Guidance
+
+        </div>
+
+    </div>
+
+    <!-- WARNING -->
+    <div class="warning">
+
+        ⚠ Only serious learners should join the Telegram channel.
+        <br>
+
+        <span>
+            By joining, you agree to receive important updates.
+        </span>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        Meta Ads Setup ke liye DM karo
+        <br><br>
+
+        Click 👉
+
+        <a href="#" onclick="openWhatsapp()">
+            VOLTAX ADS AGENCY
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+
+/* TELEGRAM LINK */
+
+const telegramLink = "https://telegram.me/+xkzABpSYlXljNzA1";
+
+/* WHATSAPP LINK */
+
+const whatsappLink = "https://wa.me/919775339834";
+
+/* JOIN TELEGRAM */
+
+function joinTelegram(){
+
+    window.open(telegramLink, "_blank");
+
+}
+
+/* OPEN WHATSAPP */
+
+function openWhatsapp(){
+
+    window.open(whatsappLink, "_blank");
+
+}
+
+/* AUTO REDIRECT */
+
+let time = 4;
+
+const counter = document.getElementById("count");
+
+counter.innerText = time;
+
+const timer = setInterval(() => {
+
+    time--;
+
+    counter.innerText = time;
+
+    if(time <= 0){
+
+        clearInterval(timer);
+
+        window.location.href = telegramLink;
+
+    }
+
+},1000);
+
+</script>
+
+</body>
+</html>
