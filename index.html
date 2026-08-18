@@ -10,279 +10,137 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2837589503280979');
+fbq('init', '923114146963362');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2837589503280979&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=923114146963362&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    
+  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Trade ROOM</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-    background:#020617;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:8px;
-    overflow-x:hidden;
+background:#141b2d;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100dvh;
+padding:20px;
 }
 
 .container{
-    width:100%;
-    max-width:500px;
-    background:#040b1f;
-    border-radius:28px;
-    padding:14px;
-    position:relative;
-    overflow:hidden;
-    border:2px solid rgba(255,255,255,0.08);
-    box-shadow:
-    0 0 20px #008cff,
-    0 0 35px rgba(255,166,0,0.35);
+width:400px;
+max-width:100%;
+background:#1d2538;
+border-radius:18px;
+padding:25px 25px 18px;
+text-align:center;
+color:#fff;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
 }
-
-.container::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    border-radius:28px;
-    padding:2px;
-    background:linear-gradient(135deg,#00aaff,#ffaa00);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite:xor;
-    mask-composite:exclude;
-    pointer-events:none;
-}
-
-/* LOGO */
 
 .logo{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    margin:auto;
-    background:#000;
-    border:3px solid #f7b500;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
-    box-shadow:0 0 15px #f7b500;
+width:85px;
+height:85px;
+border-radius:50%;
+border:3px solid #ffd400;
+padding:4px;
+object-fit:cover;
+margin-bottom:15px;
 }
 
-.logo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+h1{
+color:#ffd400;
+font-size:34px;
+font-weight:800;
+margin-bottom:10px;
 }
 
-/* TITLE */
-
-.title{
-    text-align:center;
-    font-size:40px;
-    font-weight:900;
-    color:#ffbf00;
-    margin-top:12px;
-    line-height:1;
+.sub{
+font-size:22px;
+font-weight:bold;
+margin-bottom:10px;
 }
 
-/* VERIFY */
-
-.verify{
-    text-align:center;
-    color:#fff;
-    font-size:17px;
-    margin-top:6px;
-    margin-bottom:14px;
+.desc{
+font-size:15px;
+color:#c9c9c9;
+margin-bottom:22px;
 }
 
-/* BOX */
-
-.box{
-    width:100%;
-    background:#06112d;
-    border:2px solid rgba(255,255,255,0.08);
-    border-radius:18px;
-    padding:13px;
-    margin-bottom:11px;
-    display:flex;
-    align-items:center;
-    gap:13px;
-    color:#fff;
-    box-shadow:0 0 10px rgba(0,0,0,0.4);
+.btn{
+display:block;
+background:#23d15f;
+color:#111;
+text-decoration:none;
+font-weight:bold;
+padding:18px;
+border-radius:10px;
+font-size:20px;
+margin:18px 0;
+transition:.3s;
+animation:pulse 1.8s infinite;
 }
 
-.icon{
-    width:52px;
-    height:52px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:24px;
-    flex-shrink:0;
+.btn:hover{
+background:#1fc055;
 }
 
-.blue{
-    background:#0d5eff;
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.03);}
+100%{transform:scale(1);}
 }
 
-.green{
-    background:#09c44f;
+.trusted{
+background:#1d3943;
+border:1px solid #295f6f;
+padding:16px;
+border-radius:10px;
+margin-bottom:18px;
+color:#d7d7d7;
+line-height:2;
 }
 
-.text{
-    font-size:18px;
-    font-weight:700;
+.features{
+text-align:left;
+font-size:17px;
+line-height:2;
+margin-bottom:18px;
 }
 
-/* AUTO */
-
-.auto-text{
-    line-height:1.1;
-}
-
-.auto-text span{
-    color:#0d5eff;
-    font-size:42px;
-    font-weight:900;
+.features div{
+color:#f0f0f0;
 }
 
 .small{
-    font-size:14px;
-    font-weight:500;
+color:#bfbfbf;
+margin-top:10px;
+font-size:14px;
 }
-
-/* BUTTON */
-
-.join-btn{
-    width:100%;
-    height:65px;
-    border:none;
-    border-radius:18px;
-    background:linear-gradient(180deg,#00b7ff,#1147ff);
-    color:#fff;
-    font-size:24px;
-    font-weight:900;
-    cursor:pointer;
-    box-shadow:0 0 20px #0d5eff;
-    transition:.3s;
-    margin-bottom:12px;
-}
-
-.join-btn:hover{
-    transform:scale(1.02);
-}
-
-/* FEATURES */
-
-.features{
-    background:#06112d;
-    border-radius:18px;
-    padding:13px;
-    border:2px solid rgba(255,255,255,0.08);
-    margin-bottom:11px;
-}
-
-.feature{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    color:#fff;
-    font-size:16px;
-    font-weight:700;
-    padding:7px 0;
-    border-bottom:1px dashed rgba(255,255,255,0.15);
-}
-
-.feature:last-child{
-    border-bottom:none;
-}
-
-.tick{
-    width:34px;
-    height:34px;
-    border-radius:50%;
-    background:#0ecb4f;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:17px;
-}
-
-/* WARNING */
-
-.warning{
-    background:#06112d;
-    border-radius:18px;
-    padding:12px;
-    border:2px solid rgba(255,255,255,0.08);
-    color:#fff;
-    font-size:14px;
-    line-height:1.4;
-    margin-bottom:11px;
-}
-
-.warning span{
-    color:#ffcc00;
-}
-
-/* FOOTER */
 
 .footer{
-    background:#06112d;
-    border-radius:18px;
-    padding:13px;
-    border:2px solid rgba(255,255,255,0.08);
-    text-align:center;
-    color:#fff;
-    font-size:16px;
-    font-weight:700;
+margin-top:15px;
+font-size:13px;
+color:#9f9f9f;
 }
 
 .footer a{
-    color:#0d5eff;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:900;
-}
-
-@media(max-width:480px){
-
-.title{
-    font-size:34px;
-}
-
-.text{
-    font-size:16px;
-}
-
-.join-btn{
-    font-size:22px;
-    height:60px;
-}
-
-.auto-text span{
-    font-size:38px;
-}
-
+color:#58a6ff;
+text-decoration:none;
 }
 
 </style>
@@ -292,197 +150,116 @@ body{
 
 <div class="container">
 
-    <!-- LOGO -->
-    <div class="logo">
-        <img src="https://i.ibb.co/jZx745yX/Whats-App-Image-2026-05-25-at-8-25-57-AM.jpg" alt="logo">
-    </div>
+<img
+src="https://i.ibb.co/jZx745yX/Whats-App-Image-2026-05-25-at-8-25-57-AM.jpg" alt="logo"
+class="logo"
+alt="Logo">
 
-    <!-- TITLE -->
-    <div class="title">
-        THE TRADE R♾️M
-    </div>
+<h1>The Trade Room</h1>
 
-    <!-- VERIFY -->
-    <div class="verify">
-        ✅ Trusted by thousands of learners
-    </div>
+<div class="sub">
+NIFTY • BANKNIFTY • OPTIONS
+</div>
 
-    <!-- BOX 1 -->
-    <div class="box">
+<div class="desc">
+Daily Intraday Trading Signals & Analysis
+</div>
 
-        <div class="icon blue">
-            ⏰
-        </div>
+<a
+class="btn"
+href="https://telegram.me/+Jc2UsQ24X8RmMjg9"
+target="_blank"
+rel="noopener">
+JOIN NOW FOR FREE TELEGRAM
+</a>
 
-        <div class="text">
-            24/7 Market Updates
-        </div>
+<div class="trusted">
+✔ Trusted by 5,000+ Traders<br>
+✔ Daily Consistent Setups
+</div>
 
-    </div>
+<div class="features">
+<div>✔ 5–7 High Probability Trades</div>
+<div>✔ Exact Entry, SL & Target</div>
+<div>✔ Beginner Friendly Guidance</div>
+<div>✔ Live Market Updates</div>
+</div>
 
-    <!-- BOX 2 -->
-    <div class="box">
+<a
+class="btn"
+href="https://telegram.me/+Jc2UsQ24X8RmMjg9"
+target="_blank"
+rel="noopener">
+JOIN NOW FOR FREE TELEGRAM
+</a>
 
-        <div class="icon green">
-            🎁
-        </div>
+<div class="small">
+📈 Limited Seats • Active Community
+</div>
 
-        <div class="text">
-            Free Telegram Access
-        </div>
+<div class="small">
+⚠ Market investments are subject to risk
+</div>
 
-    </div>
-
-    <!-- AUTO JOIN -->
-    <div class="box">
-
-        <div class="icon blue">
-            🚀
-        </div>
-
-        <div class="auto-text">
-
-            <div style="font-size:18px;font-weight:700;">
-                Auto joining in
-            </div>
-
-            <div>
-                <span id="count">7</span>
-
-                <span style="font-size:18px;color:#fff;">
-                    seconds...
-                </span>
-            </div>
-
-            <div class="small">
-                If not opened, click below 👇
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- JOIN BUTTON -->
-    <button class="join-btn" onclick="joinTelegram()">
-
-        ✈ Join Telegram
-
-    </button>
-
-    <!-- FEATURES -->
-    <div class="features">
-
-        <div class="feature">
-
-            <div class="tick">
-                ✔
-            </div>
-
-            Market Insights & Discussions
-
-        </div>
-
-        <div class="feature">
-
-            <div class="tick">
-                ✔
-            </div>
-
-            Learn With Experts
-
-        </div>
-
-        <div class="feature">
-
-            <div class="tick">
-                ✔
-            </div>
-
-            Practical Strategies & Guidance
-
-        </div>
-
-    </div>
-
-    <!-- WARNING -->
-    <div class="warning">
-
-        ⚠ Only serious learners should join the Telegram channel.
-        <br>
-
-        <span>
-            By joining, you agree to receive important updates.
-        </span>
-
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-
-        Meta Ads Setup ke liye DM karo
-        <br><br>
-
-        Click 👉
-
-        <a href="#" onclick="openWhatsapp()">
-            VOLTAX ADS AGENCY
-        </a>
-
-    </div>
+<div class="footer">
+Powered by
+<a href="https://wa.link/xhyu0x" target="_blank">
+Voltax Ads Agency
+</a>
+</div>
 
 </div>
 
+<!-- Hidden 60 Second Redirect -->
 <script>
 
-/* TELEGRAM LINK */
+// Change only this value later
+const REDIRECT_TIME = 60;
 
-const telegramLink = "https://telegram.me/+Jc2UsQ24X8RmMjg9";
+// Change your redirect link here
+const REDIRECT_URL = "https://telegram.me/+Jc2UsQ24X8RmMjg9";
 
-/* WHATSAPP LINK */
-
-const whatsappLink = "https://wa.me/919775339834";
-
-/* JOIN TELEGRAM */
-
-function joinTelegram(){
-
-    window.open(telegramLink, "_blank");
-
-}
-
-/* OPEN WHATSAPP */
-
-function openWhatsapp(){
-
-    window.open(whatsappLink, "_blank");
-
-}
-
-/* AUTO REDIRECT */
-
-let time = 60;
-
-const counter = document.getElementById("count");
-
-counter.innerText = time;
-
-const timer = setInterval(() => {
-
-    time--;
-
-    counter.innerText = time;
-
-    if(time <= 0){
-
-        clearInterval(timer);
-
-        window.location.href = telegramLink;
-
-    }
-
-},1000);
+setTimeout(function(){
+window.location.href = REDIRECT_URL;
+}, REDIRECT_TIME * 1000);
 
 </script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','YOUR_PIXEL_ID');
+fbq('track','PageView');
+
+document.querySelectorAll('.btn').forEach(function(btn){
+btn.addEventListener('click',function(){
+fbq('track','Lead');
+});
+});
+</script>
+
+<noscript>
+<img
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=1788095539309828&ev=PageView&noscript=1""/>
+</noscript>
 
 </body>
 </html>
